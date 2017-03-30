@@ -15,6 +15,7 @@ build:
     - java -version  
     - echo $custom
     - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
+    - script: for i in {1..5000}; do echo "$i"; done
     #- echo $custom
 #    - sleep 8m
    
