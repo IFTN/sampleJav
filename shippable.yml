@@ -17,7 +17,7 @@ build:
     - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     - for i in {1..5}; do echo "$i"; done
     - echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/dv-image.env
-    - echo lol
+    - echo lola
     #- echo $custom
 #    - sleep 8m 
    
