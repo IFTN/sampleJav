@@ -12,6 +12,7 @@ matrix:
     - jdk: oraclejdk7 
 build:
   ci:
+    - printenv
     - java -version  
     - echo $custom
     - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
