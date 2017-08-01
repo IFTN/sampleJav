@@ -20,5 +20,5 @@ build:
     - echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/dv-image.env
     - echo lol
     #- echo $custom
-#    - sleep 8m 
+    - sleep 8m 
    
