@@ -9,8 +9,8 @@ matrix:
     - jdk: oraclejdk7 
 build:
   ci:
+    - aws --version
     - printenv
-    - docker pull bharath92/gitissues
     - java -version  
     - echo $custom
     - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
