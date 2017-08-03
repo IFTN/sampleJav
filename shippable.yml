@@ -19,6 +19,4 @@ build:
     - for i in {1..5}; do echo "$i"; done
     - echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/dv-image.env
     - echo lol
-    #- echo $custom
-    - sleep 8m 
-   
+    
