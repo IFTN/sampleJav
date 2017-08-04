@@ -4,12 +4,15 @@ language: java
 # Version number
 jdk:
   - openjdk7
+
 matrix:
   allow_failures:
     - jdk: oraclejdk7 
+
 build:
   ci:
     - aws --version
+    - docker pull bharath92/gitissues
     - printenv
     - java -version  
     - echo $custom
@@ -18,3 +21,7 @@ build:
     - echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/dv-image.env
     - echo lol
     
+integrations:                               
+  hub:
+    - integrationName: docker    #replace with your integration name   
+      type: docker
