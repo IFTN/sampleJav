@@ -12,6 +12,7 @@ matrix:
 build:
   ci:
     - aws --version
+    - docker images
     - docker pull bharath92/gitissues
     - printenv
     - java -version  
